@@ -1,16 +1,20 @@
 package Chapter8;
+
 import java.util.Scanner;
-/** Program that displays salesman info
+
+/**
+ * Program that displays salesman info
  *
  * @author Chad Marshall
  */
+public class P8 {
 
-public class P8ChadMarshall {
-/** Main method - manipulates variables and displays things to the console
- * 
- * @param args 
- */
-   public static void main(String[] args) {
+    /**
+     * Main method - manipulates variables and displays things to the console
+     *
+     * @param args displays things to command prompt
+     */
+    public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         double[][] money;
         //money[r][c] = new double[4][5];
@@ -66,4 +70,3 @@ public class P8ChadMarshall {
         } while (!answer.equals("N"));
     }
 }
-  

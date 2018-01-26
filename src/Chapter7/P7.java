@@ -1,14 +1,18 @@
-
+package Chapter7;
 import java.util.*;
-/** progrm that displays employee's schedule 
- * 
+
+/**
+ * progrm that displays employee's schedule
+ *
  * @author cm0977754
  */
-public class P7ChadMarshall {
-/** main method displays stuff to console
- * 
- * @param args 
- */
+public class P7 {
+
+    /**
+     * main method displays stuff to console
+     *
+     * @param args displays things to command prompt
+     */
     public static void main(String[] args) {
         int[][] weekHours
                 = {
@@ -23,8 +27,6 @@ public class P7ChadMarshall {
         String[] days = {"su", "m", "t", "w", "th", "f", "sa"};
         int[] totalHours = sumRows(weekHours);
 
-        
-        
         //days of the week
         for (int r = 0; r < weekHours[0].length; r++) {
             System.out.print("Employee " + r);
@@ -36,15 +38,17 @@ public class P7ChadMarshall {
             System.out.println();
         }
     }
-/**
- * 
- * @param m - getter for array
- * @return - returns the sum
- */
+
+    /**
+     * Method searches through the arrays and sorts them
+     *
+     * @param m - getter for array
+     * @return - returns the sum
+     */
     public static int[] sumRows(int[][] m) {
-       int[] sum = new int[m.length];
+        int[] sum = new int[m.length];
         for (int row = 0; row < m.length; row++) {
-           for (int c = 0; c < m[row].length; c++) {
+            for (int c = 0; c < m[row].length; c++) {
                 sum[row] += m[row][c];
 
             }

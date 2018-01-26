@@ -1,8 +1,14 @@
 
 import java.util.*;
-
+/** progrm that displays employee's schedule 
+ * 
+ * @author cm0977754
+ */
 public class P7ChadMarshall {
-
+/** main method displays stuff to console
+ * 
+ * @param args 
+ */
     public static void main(String[] args) {
         int[][] weekHours
                 = {
@@ -30,7 +36,11 @@ public class P7ChadMarshall {
             System.out.println();
         }
     }
-
+/**
+ * 
+ * @param m - getter for array
+ * @return - returns the sum
+ */
     public static int[] sumRows(int[][] m) {
        int[] sum = new int[m.length];
         for (int row = 0; row < m.length; row++) {

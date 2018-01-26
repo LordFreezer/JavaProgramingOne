@@ -1,8 +1,14 @@
 package Chapter7;
 import java.util.Scanner;
-
+/** Program that tells whether or not strings are identical 
+ * 
+ * @author Chad Marshall
+ */
 public class C7_26
-{
+{/** Main method displays stuff to console
+ * 
+ * @param args 
+ */
 	public static void main(String[] args)
         {
 		Scanner input = new Scanner(System.in);
@@ -28,6 +34,12 @@ public class C7_26
                     System.out.println("The lists are not identical");
                 }              
 	}
+        /**
+         * 
+         * @param list1 - array list for first list
+         * @param list2 - array list for second list
+         * @return - returns bool value for true
+         */
 	public static boolean equals(int[] list1, int[] list2) 
         {
 		if (list1.length != list2.length)

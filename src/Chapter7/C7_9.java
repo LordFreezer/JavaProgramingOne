@@ -1,7 +1,15 @@
+package Chapter7;
 import java.util.Scanner;
-
+/** Program that tells which number is the min
+ * 
+ * 
+ * @author Chad Marshall
+ */
 public class C7_9 {
-    
+    /** Main method that displays stuff to console
+     * 
+     * @param args 
+     */
     public static void main(String[] args) {
         System.out.print("Enter ten numbers: ");
         Scanner input = new Scanner(System.in);
@@ -13,7 +21,12 @@ public class C7_9 {
         
         System.out.println("The minimum number is: " + min(numbers));
     }
-    
+    /**
+     * 
+     * @param array gets values form numbers
+     * 
+     * @return returns the min
+     */
     public static double min(double[] array) {
         
         double min = array[0];
